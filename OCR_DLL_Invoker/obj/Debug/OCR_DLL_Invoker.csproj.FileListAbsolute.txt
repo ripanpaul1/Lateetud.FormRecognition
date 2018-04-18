@@ -1,0 +1,332 @@
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\ApplicationInsights.config
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\csc.exe
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\vbc.exe
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\VBCSCompiler.exe
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\OCR_DLL_Invoker.dll.config
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\OCR_DLL_Invoker.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\OCR_DLL_Invoker.pdb
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\FormRecognizer.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Barcode.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Codecs.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ColorConversion.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Drawing.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Auto.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Processing.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.Barcode.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.Ocr.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Color.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Core.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Effects.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Utilities.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Svg.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Vector.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.Web.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\NLog.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\FormRecognizer.pdb
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Barcode.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Codecs.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ColorConversion.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Drawing.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Processing.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.Barcode.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.Ocr.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Color.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Core.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Effects.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Svg.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.Web.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\NLog.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\obj\Debug\OCR_DLL_Invoker.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\obj\Debug\OCR_DLL_Invoker.pdb
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Ocr.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Document.Writer.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Annotations.Engine.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Common.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Auto.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Ocr.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Document.Writer.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Annotations.Engine.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Common.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Codecs.Cmp.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Document.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Document.Raster.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Drawing.MP.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Commands.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageOptimization.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Ocr.LEADEngine.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Caching.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Document.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Commands.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageOptimization.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Caching.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\obj\Debug\OCR_DLL_Invoker.csprojResolveAssemblyReference.cache
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Pdf.Annotations.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Pdf.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.PdfCompressor.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Codecs.Fax.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Mrc.dll
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Pdf.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Pdf.Annotations.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.PdfCompressor.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Mrc.xml
+C:\Users\Public\Documents\Lateetud\SMART\SMART CodeBase\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Codecs.Tif.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\ApplicationInsights.config
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\csc.exe
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\System.Collections.Immutable.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\System.Reflection.Metadata.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\vbc.exe
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\VBCSCompiler.exe
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\roslyn\VBCSCompiler.exe.config
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\OCR_DLL_Invoker.dll.config
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\OCR_DLL_Invoker.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\OCR_DLL_Invoker.pdb
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.DependencyCollector.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.Web.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.WindowsServer.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.ApplicationInsights.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\NLog.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Codecs.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Ocr.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Auto.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Barcode.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Caching.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Svg.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Color.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Codecs.Fax.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ColorConversion.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.Barcode.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Vector.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Annotations.Engine.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Document.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Document.Writer.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Drawing.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Commands.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Common.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Processing.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.Ocr.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageOptimization.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Core.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Effects.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Pdf.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Pdf.Annotations.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.DependencyCollector.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.Web.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.AI.WindowsServer.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.ApplicationInsights.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\NLog.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Codecs.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Ocr.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Auto.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Barcode.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Caching.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Svg.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Color.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ColorConversion.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.Barcode.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\obj\Debug\OCR_DLL_Invoker.csprojResolveAssemblyReference.cache
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\obj\Debug\OCR_DLL_Invoker.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\obj\Debug\OCR_DLL_Invoker.pdb
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Annotations.Engine.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Document.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Document.Raster.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Document.Writer.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Drawing.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Drawing.MP.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Commands.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Common.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Processing.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.Ocr.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageOptimization.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Core.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Effects.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Utilities.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Ocr.LEADEngine.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Pdf.Annotations.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Pdf.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Annotations.Automation.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Annotations.BatesStamp.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Annotations.Core.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Annotations.Designers.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Annotations.Documents.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Annotations.Rendering.WinForms.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Codecs.Cmp.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Codecs.Png.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Codecs.Tif.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Controls.WinForms.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Drawing.D2D.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.DocumentWriters.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Ocr.Advantage.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.Ocr.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Mrc.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Ocr.OmniPageArabicEngine.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.PdfCompressor.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Annotations.Automation.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Annotations.BatesStamp.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Annotations.Designers.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Annotations.Rendering.WinForms.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Controls.WinForms.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Mrc.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.PdfCompressor.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Leadtools.Forms.DocumentWriters.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\EntityFramework.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\EntityFramework.SqlServer.dll
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\EntityFramework.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\EntityFramework.SqlServer.xml
+E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Newtonsoft.Json.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\ApplicationInsights.config
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\roslyn\csc.exe
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\roslyn\System.Collections.Immutable.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\roslyn\System.Reflection.Metadata.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\roslyn\vbc.exe
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\roslyn\VBCSCompiler.exe
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\roslyn\VBCSCompiler.exe.config
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\OCR_DLL_Invoker.dll.config
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\OCR_DLL_Invoker.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\OCR_DLL_Invoker.pdb
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\EntityFramework.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\EntityFramework.SqlServer.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Annotations.Automation.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Annotations.BatesStamp.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Annotations.Designers.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Annotations.Engine.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Annotations.Rendering.WinForms.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Barcode.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Caching.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Codecs.Cmp.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Codecs.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Codecs.Fax.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Codecs.Png.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Codecs.Tif.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.ColorConversion.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Controls.WinForms.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Document.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Document.Raster.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Document.Writer.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Drawing.D2D.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Drawing.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Drawing.MP.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.Auto.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.Commands.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.Common.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.DocumentWriters.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.Ocr.Advantage.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.Processing.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.Barcode.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.Ocr.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.ImageOptimization.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Color.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Core.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Effects.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Utilities.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Mrc.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Ocr.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Ocr.LEADEngine.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Ocr.OmniPageArabicEngine.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Pdf.Annotations.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Pdf.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.PdfCompressor.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Svg.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Vector.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.AI.DependencyCollector.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.AI.Web.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.AI.WindowsServer.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.ApplicationInsights.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Newtonsoft.Json.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\EntityFramework.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\EntityFramework.SqlServer.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Annotations.Automation.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Annotations.BatesStamp.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Annotations.Designers.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Annotations.Engine.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Annotations.Rendering.WinForms.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Barcode.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Caching.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Codecs.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.ColorConversion.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Controls.WinForms.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Document.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Document.Writer.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Drawing.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.Auto.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.Commands.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.Common.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.DocumentWriters.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.Processing.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.Barcode.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Forms.Recognition.Ocr.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.ImageOptimization.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Color.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Core.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.ImageProcessing.Effects.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Mrc.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Ocr.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Pdf.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Pdf.Annotations.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.PdfCompressor.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Svg.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.AI.DependencyCollector.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.AI.Web.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.AI.WindowsServer.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.ApplicationInsights.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\NLog.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\obj\Debug\OCR_DLL_Invoker.csprojResolveAssemblyReference.cache
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\obj\Debug\OCR_DLL_Invoker.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\obj\Debug\OCR_DLL_Invoker.pdb
