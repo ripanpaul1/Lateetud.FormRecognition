@@ -10,10 +10,11 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="RunTime" Type="datetime" />
           <Property Name="Comment" Type="nvarchar(max)" />
           <Property Name="Status" Type="varchar" MaxLength="50" />
           <Property Name="RunID" Type="bigint" />
+          <Property Name="EndTime" Type="datetime" />
+          <Property Name="StartTime" Type="datetime" />
         </EntityType>
         <EntityType Name="ExceptionLog">
           <Key>
@@ -52,10 +53,11 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="RunTime" Type="DateTime" Precision="3" />
           <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="RunID" Type="Int64" />
+          <Property Name="EndTime" Type="DateTime" Precision="3" />
+          <Property Name="StartTime" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="ExceptionLog">
           <Key>
@@ -102,8 +104,9 @@
           <EntitySetMapping Name="APICallHistories">
             <EntityTypeMapping TypeName="MasterFormModel.APICallHistory">
               <MappingFragment StoreEntitySet="APICallHistory">
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="RunTime" ColumnName="RunTime" />
                 <ScalarProperty Name="Comment" ColumnName="Comment" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="RunID" ColumnName="RunID" />

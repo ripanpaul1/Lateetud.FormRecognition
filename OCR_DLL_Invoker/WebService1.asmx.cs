@@ -59,7 +59,7 @@ namespace OCR_DLL_Invoker
         public string GetResultInXML()
         {
 
-
+            string strStatus = "START";
             long runID;
             string str = string.Empty;
             using (DBEntities context = new DBEntities())
@@ -76,9 +76,9 @@ namespace OCR_DLL_Invoker
                 APICallHistory apiCallHstStart = new APICallHistory();
 
                 apiCallHstStart.RunID = Convert.ToInt64(runID);
-                apiCallHstStart.RunTime = DateTime.Now;
+                apiCallHstStart.StartTime = DateTime.Now;
                 apiCallHstStart.Comment = "Call For XML";
-                apiCallHstStart.Status = "START";
+                apiCallHstStart.Status = strStatus;//"START";
                 using (DBEntities db = new DBEntities())
                 {
                     db.APICallHistories.Add(apiCallHstStart);
@@ -97,14 +97,24 @@ namespace OCR_DLL_Invoker
                 str = ConvertDatatableToXML(dtOutput);
                 #region End Entry into APICallHistory
                 //APICallHistory apiCallHstStart = new APICallHistory();
+                if (dtOutput.Rows.Count > 0)
+                {
+                    strStatus = dtOutput.Rows.Count+ " Rows Successfully returned";
+                }
+                else
+                {
+                    strStatus = "No Records returned";
+                }
+                //apiCallHstStart.RunID = Convert.ToInt64(runID);
+                //apiCallHstStart.EndTime = DateTime.Now;
+                //apiCallHstStart.Comment = "Call For XML";
 
-                apiCallHstStart.RunID = Convert.ToInt64(runID);
-                apiCallHstStart.RunTime = DateTime.Now;
-                apiCallHstStart.Comment = "Call For XML";
-                apiCallHstStart.Status = "END";
+                apiCallHstStart.EndTime = DateTime.Now;
+                apiCallHstStart.Status = strStatus;
                 using (DBEntities db = new DBEntities())
                 {
-                    db.APICallHistories.Add(apiCallHstStart);
+                    db.Entry(apiCallHstStart).State = EntityState.Modified;
+                    
                     db.SaveChanges();
                 }
                 #endregion
@@ -146,6 +156,20 @@ namespace OCR_DLL_Invoker
 
                 #endregion
 
+                #region Update History table
+                APICallHistory apiCallHstStart = new APICallHistory();
+                apiCallHstStart.RunID = runID;
+                using (DBEntities db = new DBEntities())
+                {
+                    apiCallHstStart = db.APICallHistories.Where(x => x.RunID == apiCallHstStart.RunID).FirstOrDefault();
+                    apiCallHstStart.EndTime = DateTime.Now;
+                    apiCallHstStart.Status = "Exception";
+                    db.Entry(apiCallHstStart).State = EntityState.Modified;
+
+                    db.SaveChanges();
+                }
+                #endregion
+
                 WriteToFile("RuleEngine Error on: {0} " + ex.Message + ex.StackTrace);
             }
             return str;
@@ -154,7 +178,7 @@ namespace OCR_DLL_Invoker
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public string GetResultInJSON()
         {
-
+            string strStatus = "START";
             long runID;
             string jsonResult = string.Empty;
 
@@ -172,9 +196,9 @@ namespace OCR_DLL_Invoker
                 APICallHistory apiCallHstStart = new APICallHistory();
 
                 apiCallHstStart.RunID = Convert.ToInt64(runID);
-                apiCallHstStart.RunTime = DateTime.Now;
+                apiCallHstStart.StartTime = DateTime.Now;
                 apiCallHstStart.Comment = "Call For JSON";
-                apiCallHstStart.Status = "START";
+                apiCallHstStart.Status = strStatus;//"START";
                 using (DBEntities db = new DBEntities())
                 {
                     db.APICallHistories.Add(apiCallHstStart);
@@ -193,15 +217,23 @@ namespace OCR_DLL_Invoker
                 jsonResult = JsonConvert.SerializeObject(dtOutput, Newtonsoft.Json.Formatting.Indented, jss);
 
                 #region End Entry into APICallHistory
+                if (dtOutput.Rows.Count > 0)
+                {
+                    strStatus = dtOutput.Rows.Count + " Rows Successfully returned";
+                }
+                else
+                {
+                    strStatus = "No Records returned";
+                }
                 //APICallHistory apiCallHstStart = new APICallHistory();
 
-                apiCallHstStart.RunID = Convert.ToInt64(runID);
-                apiCallHstStart.RunTime = DateTime.Now;
-                apiCallHstStart.Comment = "Call For JSON";
-                apiCallHstStart.Status = "END";
+                //apiCallHstStart.RunID = Convert.ToInt64(runID);
+                apiCallHstStart.EndTime = DateTime.Now;
+                //apiCallHstStart.Comment = "Call For JSON";
+                apiCallHstStart.Status = strStatus;//"END";
                 using (DBEntities db = new DBEntities())
                 {
-                    db.APICallHistories.Add(apiCallHstStart);
+                    db.Entry(apiCallHstStart).State = EntityState.Modified;
                     db.SaveChanges();
                 }
                 #endregion
@@ -227,6 +259,20 @@ namespace OCR_DLL_Invoker
             }
             catch (Exception ex)
             {
+                #region Update History table
+                APICallHistory apiCallHstStart = new APICallHistory();
+                apiCallHstStart.RunID = runID;
+                using (DBEntities db = new DBEntities())
+                {
+                    apiCallHstStart = db.APICallHistories.Where(x => x.RunID == apiCallHstStart.RunID).FirstOrDefault();
+                    apiCallHstStart.EndTime = DateTime.Now;
+                    apiCallHstStart.Status = "Exception";
+                    db.Entry(apiCallHstStart).State = EntityState.Modified;
+
+                    db.SaveChanges();
+                }
+                #endregion
+
                 #region Error Log
                 ExceptionLog log = new ExceptionLog();
                 log.ErrorTime = DateTime.Now;

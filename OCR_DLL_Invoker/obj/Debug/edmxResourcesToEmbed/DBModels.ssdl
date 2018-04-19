@@ -5,10 +5,11 @@
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="RunTime" Type="datetime" />
     <Property Name="Comment" Type="nvarchar(max)" />
     <Property Name="Status" Type="varchar" MaxLength="50" />
     <Property Name="RunID" Type="bigint" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="StartTime" Type="datetime" />
   </EntityType>
   <EntityType Name="ExceptionLog">
     <Key>
