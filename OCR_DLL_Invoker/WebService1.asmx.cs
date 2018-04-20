@@ -56,7 +56,7 @@ namespace OCR_DLL_Invoker
             return output;
         }
         [WebMethod]
-        public string GetResultInXML()
+        public string GetResultInXML(string FileName)
         {
 
             string strStatus = "START";
@@ -90,8 +90,17 @@ namespace OCR_DLL_Invoker
                 string DirPath = GetEnvironmentVariable("SMART");
                 AutoFormsRecognizeFormResult result = new AutoFormsRecognizeFormResult();
                 DataTable dtOutput = new DataTable();
-                result = FormOcrWcf.Program.ProcessForms(DirPath);
-                dtOutput = ResultToDataTable(result);
+                if (string.IsNullOrEmpty(FileName))//If File Name doesn`t exists
+                {
+                    result = FormOcrWcf.Program.ProcessForms(DirPath);
+                    dtOutput = ResultToDataTable(result);
+                }
+                else//If File Name provided
+                {
+                    var targetDocInput = Path.Combine(DirPath, "OCRInput");
+                    result=FormOcrWcf.Program.ProcessFiles(targetDocInput, new[] { FileName });
+                    dtOutput = ResultToDataTable(result);
+                }
 
                 dtOutput.TableName = "LateetudRuleApplication";
                 str = ConvertDatatableToXML(dtOutput);
@@ -176,7 +185,7 @@ namespace OCR_DLL_Invoker
         }
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public string GetResultInJSON()
+        public string GetResultInJSON(string FileName)
         {
             string strStatus = "START";
             long runID;
@@ -209,8 +218,17 @@ namespace OCR_DLL_Invoker
                 string DirPath = GetEnvironmentVariable("SMART");
                 AutoFormsRecognizeFormResult result = new AutoFormsRecognizeFormResult();
                 DataTable dtOutput = new DataTable();
-                result = FormOcrWcf.Program.ProcessForms(DirPath);
-                dtOutput = ResultToDataTable(result);
+                if (string.IsNullOrEmpty(FileName))//If File Name doesn`t exists
+                {
+                    result = FormOcrWcf.Program.ProcessForms(DirPath);
+                    dtOutput = ResultToDataTable(result);
+                }
+                else//If File Name provided
+                {
+                    var targetDocInput = Path.Combine(DirPath, "OCRInput");
+                    result = FormOcrWcf.Program.ProcessFiles(targetDocInput, new[] { FileName });
+                    dtOutput = ResultToDataTable(result);
+                }
 
                 dtOutput.TableName = "LateetudRuleApplication";
                 JsonSerializerSettings jss = new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore };
