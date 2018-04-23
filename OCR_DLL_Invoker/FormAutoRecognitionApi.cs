@@ -10,7 +10,7 @@ using Leadtools.ImageProcessing;
 using Leadtools.ImageProcessing.Core;
 using Leadtools.Forms.Recognition.Ocr;
 using NLog;
-using OCR_DLL_Invoker;
+//using OCR_DLL_Invoker;
 using Leadtools.Forms.Processing;
 
 namespace FormOcrWcf

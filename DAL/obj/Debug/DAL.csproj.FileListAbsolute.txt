@@ -1,0 +1,4 @@
+E:\Repository\Lateetud.FormRecognition\DAL\bin\Debug\DAL.dll
+E:\Repository\Lateetud.FormRecognition\DAL\bin\Debug\DAL.pdb
+E:\Repository\Lateetud.FormRecognition\DAL\obj\Debug\DAL.dll
+E:\Repository\Lateetud.FormRecognition\DAL\obj\Debug\DAL.pdb

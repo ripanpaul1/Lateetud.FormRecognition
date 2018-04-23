@@ -215,6 +215,7 @@ E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DL
 E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\EntityFramework.xml
 E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\EntityFramework.SqlServer.xml
 E:\Work\RuleBuilderPhase1\Updated\SMART OCR DLL & Invoker\OCR_DLL_Invoker\OCR_DLL_Invoker\bin\Newtonsoft.Json.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\obj\Debug\OCR_DLL_Invoker.csprojResolveAssemblyReference.cache
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\ApplicationInsights.config
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\roslyn\csc.exe
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -231,8 +232,11 @@ E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\roslyn\VBCSCompiler.e
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\OCR_DLL_Invoker.dll.config
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\OCR_DLL_Invoker.dll
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\OCR_DLL_Invoker.pdb
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\BLL.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\DAL.dll
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\EntityFramework.dll
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\EntityFramework.SqlServer.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\FormRecognitionUtility.dll
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Annotations.Automation.dll
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Annotations.BatesStamp.dll
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Annotations.Designers.dll
@@ -286,8 +290,11 @@ E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.AI.WindowsS
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.ApplicationInsights.dll
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Newtonsoft.Json.dll
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\BLL.pdb
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\DAL.pdb
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\EntityFramework.xml
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\EntityFramework.SqlServer.xml
+E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\FormRecognitionUtility.pdb
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.xml
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Annotations.Automation.xml
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Leadtools.Annotations.BatesStamp.xml
@@ -326,7 +333,5 @@ E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.AI.Web.xml
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.AI.WindowsServer.xml
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.ApplicationInsights.xml
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\bin\NLog.xml
-E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\obj\Debug\OCR_DLL_Invoker.csprojResolveAssemblyReference.cache
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\obj\Debug\OCR_DLL_Invoker.dll
 E:\Repository\Lateetud.FormRecognition\OCR_DLL_Invoker\obj\Debug\OCR_DLL_Invoker.pdb

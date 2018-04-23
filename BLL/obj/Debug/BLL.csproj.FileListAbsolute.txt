@@ -1,0 +1,7 @@
+E:\Repository\Lateetud.FormRecognition\BLL\bin\Debug\BLL.dll
+E:\Repository\Lateetud.FormRecognition\BLL\bin\Debug\BLL.pdb
+E:\Repository\Lateetud.FormRecognition\BLL\bin\Debug\DAL.dll
+E:\Repository\Lateetud.FormRecognition\BLL\bin\Debug\DAL.pdb
+E:\Repository\Lateetud.FormRecognition\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\Repository\Lateetud.FormRecognition\BLL\obj\Debug\BLL.dll
+E:\Repository\Lateetud.FormRecognition\BLL\obj\Debug\BLL.pdb

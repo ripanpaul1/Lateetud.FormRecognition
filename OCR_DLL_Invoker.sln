@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCR_DLL_Invoker", "OCR_DLL_Invoker\OCR_DLL_Invoker.csproj", "{468FED81-35C4-4469-B5FD-1D5A4EF40694}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormRecognitionUtility", "FormRecognitionUtility\FormRecognitionUtility.csproj", "{AB53323D-5C4C-4BCE-B30C-67A4A1869368}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{34EB16DF-82BA-497A-8A2B-F9501170A3D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{3E6B0326-7449-4AAA-A3ED-F8061EF985BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +27,30 @@ Global
 		{468FED81-35C4-4469-B5FD-1D5A4EF40694}.Release|Any CPU.Build.0 = Release|Any CPU
 		{468FED81-35C4-4469-B5FD-1D5A4EF40694}.Release|x64.ActiveCfg = Release|x64
 		{468FED81-35C4-4469-B5FD-1D5A4EF40694}.Release|x64.Build.0 = Release|x64
+		{AB53323D-5C4C-4BCE-B30C-67A4A1869368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB53323D-5C4C-4BCE-B30C-67A4A1869368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB53323D-5C4C-4BCE-B30C-67A4A1869368}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AB53323D-5C4C-4BCE-B30C-67A4A1869368}.Debug|x64.Build.0 = Debug|Any CPU
+		{AB53323D-5C4C-4BCE-B30C-67A4A1869368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB53323D-5C4C-4BCE-B30C-67A4A1869368}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB53323D-5C4C-4BCE-B30C-67A4A1869368}.Release|x64.ActiveCfg = Release|Any CPU
+		{AB53323D-5C4C-4BCE-B30C-67A4A1869368}.Release|x64.Build.0 = Release|Any CPU
+		{34EB16DF-82BA-497A-8A2B-F9501170A3D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34EB16DF-82BA-497A-8A2B-F9501170A3D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34EB16DF-82BA-497A-8A2B-F9501170A3D7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{34EB16DF-82BA-497A-8A2B-F9501170A3D7}.Debug|x64.Build.0 = Debug|Any CPU
+		{34EB16DF-82BA-497A-8A2B-F9501170A3D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34EB16DF-82BA-497A-8A2B-F9501170A3D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34EB16DF-82BA-497A-8A2B-F9501170A3D7}.Release|x64.ActiveCfg = Release|Any CPU
+		{34EB16DF-82BA-497A-8A2B-F9501170A3D7}.Release|x64.Build.0 = Release|Any CPU
+		{3E6B0326-7449-4AAA-A3ED-F8061EF985BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E6B0326-7449-4AAA-A3ED-F8061EF985BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E6B0326-7449-4AAA-A3ED-F8061EF985BC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3E6B0326-7449-4AAA-A3ED-F8061EF985BC}.Debug|x64.Build.0 = Debug|Any CPU
+		{3E6B0326-7449-4AAA-A3ED-F8061EF985BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E6B0326-7449-4AAA-A3ED-F8061EF985BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E6B0326-7449-4AAA-A3ED-F8061EF985BC}.Release|x64.ActiveCfg = Release|Any CPU
+		{3E6B0326-7449-4AAA-A3ED-F8061EF985BC}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
