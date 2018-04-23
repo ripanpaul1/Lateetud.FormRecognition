@@ -15,6 +15,8 @@ using Newtonsoft.Json;
 using System.Web.Script.Services;
 using System.Data.Entity;
 using System.Data.SqlClient;
+using System.Collections;
+using System.Reflection;
 
 namespace OCR_DLL_Invoker
 {
@@ -62,10 +64,11 @@ namespace OCR_DLL_Invoker
             string strStatus = "START";
             long runID;
             string str = string.Empty;
+            
             using (DBEntities context = new DBEntities())
             {
-                IEnumerable<RunResult> details = context.Database.SqlQuery
-                                                                              <RunResult>("exec proc_APICallHistory_GetRunID").ToList();
+                IEnumerable<CurrentRun> details = context.Database.SqlQuery
+                                                                              <CurrentRun>("exec proc_APICallHistory_GetRunID").ToList();
                 runID = Convert.ToInt64(details.FirstOrDefault().RunID);
             }
             try
@@ -92,14 +95,26 @@ namespace OCR_DLL_Invoker
                 DataTable dtOutput = new DataTable();
                 if (string.IsNullOrEmpty(FileName))//If File Name doesn`t exists
                 {
-                    result = FormOcrWcf.Program.ProcessForms(DirPath);
+                    // result = FormOcrWcf.Program.ProcessForms(DirPath);//, runID);
+                    result = FormOcrWcf.Program.ProcessForms(DirPath, runID);
                     dtOutput = ResultToDataTable(result);
                 }
                 else//If File Name provided
                 {
                     var targetDocInput = Path.Combine(DirPath, "OCRInput");
-                    result=FormOcrWcf.Program.ProcessFiles(targetDocInput, new[] { FileName });
-                    dtOutput = ResultToDataTable(result);
+                    result = FormOcrWcf.Program.ProcessFiles(targetDocInput, new[] { FileName }, runID);
+                    //result=FormOcrWcf.Program.ProcessFiles(targetDocInput, new[] { FileName });
+                    //dtOutput = ResultToDataTable(result);
+                }
+
+                using (DBEntities db = new DBEntities())
+                {
+                    var runIdParam = new SqlParameter("@RunID", runID);
+                    IEnumerable<Result> details = db.Database.SqlQuery
+                                                                              <Result>("exec proc_ApplicationSummary_GetResultByRunID @RunID", runIdParam).ToList();
+
+                    dtOutput = CreateDataTable(details);
+                    //dtOutput =detail
                 }
 
                 dtOutput.TableName = "LateetudRuleApplication";
@@ -108,7 +123,7 @@ namespace OCR_DLL_Invoker
                 //APICallHistory apiCallHstStart = new APICallHistory();
                 if (dtOutput.Rows.Count > 0)
                 {
-                    strStatus = dtOutput.Rows.Count+ " Rows Successfully returned";
+                    strStatus = dtOutput.Rows.Count + " Rows Successfully returned";
                 }
                 else
                 {
@@ -123,31 +138,31 @@ namespace OCR_DLL_Invoker
                 using (DBEntities db = new DBEntities())
                 {
                     db.Entry(apiCallHstStart).State = EntityState.Modified;
-                    
+
                     db.SaveChanges();
                 }
                 #endregion
 
                 #region Entry into Summary
-                MasterFormApplicationSummary applicationSummary = new MasterFormApplicationSummary();
+                //MasterFormApplicationSummary applicationSummary = new MasterFormApplicationSummary();
 
-                foreach (DataRow row in dtOutput.Rows)
-                {
-                    applicationSummary.RunID = Convert.ToInt64(runID);
-                    applicationSummary.EntryDate = DateTime.Now;
-                    applicationSummary.FieldKey = Convert.ToString(row["FieldName"]);
-                    applicationSummary.FieldValue = Convert.ToString(row["FieldValue"]);
-                    using (DBEntities db = new DBEntities())
-                    {
-                        db.MasterFormApplicationSummaries.Add(applicationSummary);
-                        db.SaveChanges();
-                    }
+                //foreach (DataRow row in dtOutput.Rows)
+                //{
+                //    applicationSummary.RunID = Convert.ToInt64(runID);
+                //    applicationSummary.EntryDate = DateTime.Now;
+                //    applicationSummary.FieldKey = Convert.ToString(row["FieldName"]);
+                //    applicationSummary.FieldValue = Convert.ToString(row["FieldValue"]);
+                //    using (DBEntities db = new DBEntities())
+                //    {
+                //        db.MasterFormApplicationSummaries.Add(applicationSummary);
+                //        db.SaveChanges();
+                //    }
 
-                }
+                //}
 
                 #endregion
 
-                
+
             }
             catch (Exception ex)
             {
@@ -155,7 +170,7 @@ namespace OCR_DLL_Invoker
                 ExceptionLog log = new ExceptionLog();
                 log.ErrorTime = DateTime.Now;
                 log.ErrorMessage = Convert.ToString(ex.Message);
-                log.Comments = "Error at Call For XML Method for Run ID: "+runID+"";
+                log.Comments = "Error at Call For XML Method for Run ID: " + runID + "";
 
                 using (DBEntities db = new DBEntities())
                 {
@@ -193,8 +208,8 @@ namespace OCR_DLL_Invoker
 
             using (DBEntities context = new DBEntities())
             {
-                IEnumerable<RunResult> details = context.Database.SqlQuery
-                                                                              <RunResult>("exec proc_APICallHistory_GetRunID").ToList();
+                IEnumerable<CurrentRun> details = context.Database.SqlQuery
+                                                                              <CurrentRun>("exec proc_APICallHistory_GetRunID").ToList();
                 runID = Convert.ToInt64(details.FirstOrDefault().RunID);
             }
             try
@@ -220,14 +235,26 @@ namespace OCR_DLL_Invoker
                 DataTable dtOutput = new DataTable();
                 if (string.IsNullOrEmpty(FileName))//If File Name doesn`t exists
                 {
-                    result = FormOcrWcf.Program.ProcessForms(DirPath);
+                    // result = FormOcrWcf.Program.ProcessForms(DirPath);//, runID);
+                    result = FormOcrWcf.Program.ProcessForms(DirPath, runID);
                     dtOutput = ResultToDataTable(result);
                 }
                 else//If File Name provided
                 {
                     var targetDocInput = Path.Combine(DirPath, "OCRInput");
-                    result = FormOcrWcf.Program.ProcessFiles(targetDocInput, new[] { FileName });
-                    dtOutput = ResultToDataTable(result);
+                    result = FormOcrWcf.Program.ProcessFiles(targetDocInput, new[] { FileName }, runID);
+                    //result=FormOcrWcf.Program.ProcessFiles(targetDocInput, new[] { FileName });
+                    //dtOutput = ResultToDataTable(result);
+                }
+
+                using (DBEntities db = new DBEntities())
+                {
+                    var runIdParam = new SqlParameter("@RunID", runID);
+                    IEnumerable<Result> details = db.Database.SqlQuery
+                                                                              <Result>("exec proc_ApplicationSummary_GetResultByRunID @RunID", runIdParam).ToList();
+
+                    dtOutput = CreateDataTable(details);
+                    //dtOutput =detail
                 }
 
                 dtOutput.TableName = "LateetudRuleApplication";
@@ -309,7 +336,7 @@ namespace OCR_DLL_Invoker
             }
 
             return jsonResult;
-            
+
         }
         private static string PrintToString(AutoFormsRecognizeFormResult result)
         {
@@ -465,11 +492,46 @@ namespace OCR_DLL_Invoker
                 writer.Close();
             }
         }
+        public static DataTable CreateDataTable(IEnumerable source)
+        {
+            var table = new DataTable();
+            int index = 0;
+            var properties = new List<PropertyInfo>();
+            foreach (var obj in source)
+            {
+                if (index == 0)
+                {
+                    foreach (var property in obj.GetType().GetProperties())
+                    {
+                        if (Nullable.GetUnderlyingType(property.PropertyType) != null)
+                        {
+                            continue;
+                        }
+                        properties.Add(property);
+                        table.Columns.Add(new DataColumn(property.Name, property.PropertyType));
+                    }
+                }
+                object[] values = new object[properties.Count];
+                for (int i = 0; i < properties.Count; i++)
+                {
+                    values[i] = properties[i].GetValue(obj);
+                }
+                table.Rows.Add(values);
+                index++;
+            }
+            return table;
+        }
 
-
-        public class RunResult
+        public class CurrentRun
         {
             public long RunID { get; set; }
+
+        }
+        public class Result
+        {
+            public string FileName { get; set; }
+            public string FieldKey { get; set; }
+            public string FieldValue { get; set; }
 
         }
     }
