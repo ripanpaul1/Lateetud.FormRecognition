@@ -84,3 +84,6 @@ E:\Repository\Lateetud.FormRecognition\FormRecognitionUtility\bin\Debug\Leadtool
 E:\Repository\Lateetud.FormRecognition\FormRecognitionUtility\obj\Debug\FormRecognitionUtility.csprojResolveAssemblyReference.cache
 E:\Repository\Lateetud.FormRecognition\FormRecognitionUtility\obj\Debug\FormRecognitionUtility.dll
 E:\Repository\Lateetud.FormRecognition\FormRecognitionUtility\obj\Debug\FormRecognitionUtility.pdb
+E:\Repository\Lateetud.FormRecognition\FormRecognitionUtility\bin\Debug\OCR_DLL_Invoker.dll
+E:\Repository\Lateetud.FormRecognition\FormRecognitionUtility\bin\Debug\Newtonsoft.Json.dll
+E:\Repository\Lateetud.FormRecognition\FormRecognitionUtility\bin\Debug\OCR_DLL_Invoker.pdb

@@ -67,70 +67,38 @@ namespace OCR_DLL_Invoker
             string strStatus = "START";
             long runID;
             string str = string.Empty;
+            DateTime dtServiceStart = DateTime.Now;
 
             MasterFormApplicationSummaryHandler applicationHandler = new MasterFormApplicationSummaryHandler();
             APICallHistoryHandler objAPICallHistoryHandler = new APICallHistoryHandler();
             APICallHistory objRuleSummary = objAPICallHistoryHandler.GetRunID();
             runID = Convert.ToInt64(objRuleSummary.RunID);
-            //using (DBEntities context = new DBEntities())
-            //{
-            //    IEnumerable<CurrentRun> details = context.Database.SqlQuery
-            //                                                                  <CurrentRun>("exec proc_APICallHistory_GetRunID").ToList();
-            //    runID = Convert.ToInt64(details.FirstOrDefault().RunID);
-            //}
+           
             try
             {
-                #region Entry into APICallHistory
-
-
-                APICallHistory apiCallHstStart = new APICallHistory();
-
-                apiCallHstStart.RunID = Convert.ToInt64(runID);
-                apiCallHstStart.StartTime = DateTime.Now;
-                apiCallHstStart.EndTime = DateTime.Now;
-                apiCallHstStart.Comment = "Call For XML";
-                apiCallHstStart.Status = strStatus;//"START";
-
-                APICallHistoryHandler callHistoryHandler = new APICallHistoryHandler();
-
-                callHistoryHandler.AddNew(apiCallHstStart);
-
-
-                #endregion
-
 
                 string DirPath = GetEnvironmentVariable("SMART");
                 AutoFormsRecognizeFormResult result = new AutoFormsRecognizeFormResult();
                 DataTable dtOutput = new DataTable();
                 if (string.IsNullOrEmpty(FileName))//If File Name doesn`t exists
                 {
-                    // result = FormOcrWcf.Program.ProcessForms(DirPath);//, runID);
-                    //result = FormOcrWcf.Program.ProcessForms(DirPath, runID);
+                   
                     result = FormRecognitionUtility.RuleEngineUtility.ProcessForms(DirPath, runID);
                     //dtOutput = ResultToDataTable(result);
                 }
                 else//If File Name provided
                 {
                     var targetDocInput = Path.Combine(DirPath, "OCRInput");
-                    result = FormRecognitionUtility.RuleEngineUtility.ProcessFiles(targetDocInput, new[] { FileName }, runID);
-                    //result=FormOcrWcf.Program.ProcessFiles(targetDocInput, new[] { FileName });
-                    //dtOutput = ResultToDataTable(result);
+                    //result = FormRecognitionUtility.RuleEngineUtility.ProcessFiles(targetDocInput, new[] { FileName }, runID);
+                    dtOutput = FormRecognitionUtility.RuleEngineUtility.ProcessFile(targetDocInput, new[] { FileName }, runID);
                 }
 
-                //using (DBEntities db = new DBEntities())
-                //{
-                //    var runIdParam = new SqlParameter("@RunID", runID);
-                //    IEnumerable<Result> details = db.Database.SqlQuery
-                //                                                              <Result>("exec proc_ApplicationSummary_GetResultByRunID @RunID", runIdParam).ToList();
-
-                dtOutput = applicationHandler.GetResultByRunID(runID); // Get Result By Current Run ID
-                //dtOutput =detail
-                //}
-
+               
+                //dtOutput = applicationHandler.GetResultByRunID(runID); // Get Result By Current Run ID
+               
                 dtOutput.TableName = "LateetudRuleApplication";
                 str = ConvertDatatableToXML(dtOutput);
-                #region End Entry into APICallHistory
-                //APICallHistory apiCallHstStart = new APICallHistory();
+                #region Entry into APICallHistory
                 if (dtOutput.Rows.Count > 0)
                 {
                     strStatus = dtOutput.Rows.Count + " Rows Successfully returned";
@@ -139,41 +107,39 @@ namespace OCR_DLL_Invoker
                 {
                     strStatus = "No Records returned";
                 }
-                //apiCallHstStart.RunID = Convert.ToInt64(runID);
-                //apiCallHstStart.EndTime = DateTime.Now;
-                //apiCallHstStart.Comment = "Call For XML";
 
-                APICallHistory apiCallHstEnd = new APICallHistory();
+                APICallHistory apiCallHst = new APICallHistory();
 
-                apiCallHstEnd.RunID = Convert.ToInt64(runID);
-                apiCallHstEnd.EndTime = DateTime.Now;
+                apiCallHst.RunID = Convert.ToInt64(runID);
+                apiCallHst.StartTime = dtServiceStart;
+                apiCallHst.EndTime = DateTime.Now;
+                apiCallHst.Comment = "Call For XML";
+                apiCallHst.Status = strStatus;//"START";
 
-                apiCallHstEnd.Status = strStatus;
+                APICallHistoryHandler callHistoryHandler = new APICallHistoryHandler();
 
-
-
-                callHistoryHandler.Update(apiCallHstEnd);
+                callHistoryHandler.AddNew(apiCallHst);
 
 
                 #endregion
 
                 #region Entry into Summary
-                //MasterFormApplicationSummary applicationSummary = new MasterFormApplicationSummary();
+                MasterFormApplicationSummary applicationSummary = new MasterFormApplicationSummary();
 
-                //foreach (DataRow row in dtOutput.Rows)
-                //{
-                //    applicationSummary.RunID = Convert.ToInt64(runID);
-                //    applicationSummary.EntryDate = DateTime.Now;
-                //    applicationSummary.FieldKey = Convert.ToString(row["FieldName"]);
-                //    applicationSummary.FieldValue = Convert.ToString(row["FieldValue"]);
-                //    using (DBEntities db = new DBEntities())
-                //    {
-                //        db.MasterFormApplicationSummaries.Add(applicationSummary);
-                //        db.SaveChanges();
-                //    }
+                foreach (DataRow row in dtOutput.Rows)
+                {
+                    applicationSummary.RunID = Convert.ToInt64(runID);
+                    applicationSummary.EntryDate = DateTime.Now;
+                    applicationSummary.FileName = string.IsNullOrEmpty(Convert.ToString(row["FileName"])) ? "" : Convert.ToString(row["FileName"]);
+                    applicationSummary.FieldKey = string.IsNullOrEmpty(Convert.ToString(row["FieldName"])) ? "" : Convert.ToString(row["FieldName"]);
+                    applicationSummary.FieldValue = string.IsNullOrEmpty(Convert.ToString(row["FieldValue"])) ? "" : Convert.ToString(row["FieldValue"]);
+                    MasterFormApplicationSummaryHandler applicationSummaryHandler = new MasterFormApplicationSummaryHandler();
 
-                //}
+                    applicationSummaryHandler.AddNew(applicationSummary);
 
+                }
+
+                
                 #endregion
 
 
@@ -185,6 +151,7 @@ namespace OCR_DLL_Invoker
                 log.ErrorTime = DateTime.Now;
                 log.ErrorMessage = Convert.ToString(ex.Message);
                 log.Comments = "Error at Call For XML Method for Run ID: " + runID + "";
+                log.ErrorNumber = "0";
                 ExceptionLogHandler exceptionLogHandler = new ExceptionLogHandler();
 
                 exceptionLogHandler.AddNew(log);
@@ -192,17 +159,18 @@ namespace OCR_DLL_Invoker
                 #endregion
 
                 #region Update History table
-                APICallHistory apiCallHstEnd = new APICallHistory();
+                APICallHistory apiCallHst = new APICallHistory();
 
-                apiCallHstEnd.RunID = Convert.ToInt64(runID);
-                apiCallHstEnd.EndTime = DateTime.Now;
-
-                apiCallHstEnd.Status = strStatus;
-
+                apiCallHst.RunID = Convert.ToInt64(runID);
+                apiCallHst.StartTime = dtServiceStart;
+                apiCallHst.EndTime = DateTime.Now;
+                apiCallHst.Comment = "Call For XML";
+                apiCallHst.Status = strStatus;//"START";
 
                 APICallHistoryHandler callHistoryHandler = new APICallHistoryHandler();
-                callHistoryHandler.Update(apiCallHstEnd);
-                
+
+                callHistoryHandler.AddNew(apiCallHst);
+
                 #endregion
 
                 WriteToFile("RuleEngine Error on: {0} " + ex.Message + ex.StackTrace);
@@ -216,73 +184,44 @@ namespace OCR_DLL_Invoker
             string strStatus = "START";
             long runID;
             string jsonResult = string.Empty;
+            DateTime dtServiceStart = DateTime.Now;
 
             MasterFormApplicationSummaryHandler applicationHandler = new MasterFormApplicationSummaryHandler();
             APICallHistoryHandler objAPICallHistoryHandler = new APICallHistoryHandler();
             APICallHistory objRuleSummary = objAPICallHistoryHandler.GetRunID();
             runID = Convert.ToInt64(objRuleSummary.RunID);
-            //using (DBEntities context = new DBEntities())
-            //{
-            //    IEnumerable<CurrentRun> details = context.Database.SqlQuery
-            //                                                                  <CurrentRun>("exec proc_APICallHistory_GetRunID").ToList();
-            //    runID = Convert.ToInt64(details.FirstOrDefault().RunID);
-            //}
+
             try
             {
-                #region Entry into APICallHistory
 
 
-                APICallHistory apiCallHstStart = new APICallHistory();
 
-                apiCallHstStart.RunID = Convert.ToInt64(runID);
-                apiCallHstStart.StartTime = DateTime.Now;
-                apiCallHstStart.EndTime = DateTime.Now;
-                apiCallHstStart.Comment = "Call For JSON";
-                apiCallHstStart.Status = strStatus;//"START";
-
-                APICallHistoryHandler callHistoryHandler = new APICallHistoryHandler();
-
-                callHistoryHandler.AddNew(apiCallHstStart);
-
-
-                #endregion
 
                 string DirPath = GetEnvironmentVariable("SMART");
                 AutoFormsRecognizeFormResult result = new AutoFormsRecognizeFormResult();
                 DataTable dtOutput = new DataTable();
                 if (string.IsNullOrEmpty(FileName))//If File Name doesn`t exists
                 {
-                    // result = FormOcrWcf.Program.ProcessForms(DirPath);//, runID);
-                    //result = FormOcrWcf.Program.ProcessForms(DirPath, runID);
-                    //dtOutput = ResultToDataTable(result);
+                   
                     result = FormRecognitionUtility.RuleEngineUtility.ProcessForms(DirPath, runID);
                 }
                 else//If File Name provided
                 {
                     var targetDocInput = Path.Combine(DirPath, "OCRInput");
-                    result = FormRecognitionUtility.RuleEngineUtility.ProcessFiles(targetDocInput, new[] { FileName }, runID);
-                    //var targetDocInput = Path.Combine(DirPath, "OCRInput");
-                    //result = FormOcrWcf.Program.ProcessFiles(targetDocInput, new[] { FileName }, runID);
-                    //result=FormOcrWcf.Program.ProcessFiles(targetDocInput, new[] { FileName });
-                    //dtOutput = ResultToDataTable(result);
+                    //result = FormRecognitionUtility.RuleEngineUtility.ProcessFiles(targetDocInput, new[] { FileName }, runID);
+                    dtOutput = FormRecognitionUtility.RuleEngineUtility.ProcessFile(targetDocInput, new[] { FileName }, runID);
+                    
                 }
 
-                //using (DBEntities db = new DBEntities())
-                //{
-                //    var runIdParam = new SqlParameter("@RunID", runID);
-                //    IEnumerable<Result> details = db.Database.SqlQuery
-                //                                                              <Result>("exec proc_ApplicationSummary_GetResultByRunID @RunID", runIdParam).ToList();
 
-                //    dtOutput = CreateDataTable(details);
-                //    //dtOutput =detail
-                //}
-                dtOutput = applicationHandler.GetResultByRunID(runID); // Get Result By Current Run ID
+                //dtOutput = applicationHandler.GetResultByRunID(runID); // Get Result By Current Run ID
 
                 dtOutput.TableName = "LateetudRuleApplication";
                 JsonSerializerSettings jss = new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore };
                 jsonResult = JsonConvert.SerializeObject(dtOutput, Newtonsoft.Json.Formatting.Indented, jss);
 
-                #region End Entry into APICallHistory
+
+                #region Entry into APICallHistory
                 if (dtOutput.Rows.Count > 0)
                 {
                     strStatus = dtOutput.Rows.Count + " Rows Successfully returned";
@@ -291,20 +230,38 @@ namespace OCR_DLL_Invoker
                 {
                     strStatus = "No Records returned";
                 }
-                APICallHistory apiCallHstEnd = new APICallHistory();
 
-                apiCallHstEnd.RunID = Convert.ToInt64(runID);
-                apiCallHstEnd.EndTime = DateTime.Now;
+                APICallHistory apiCallHst = new APICallHistory();
 
-                apiCallHstEnd.Status = strStatus;
+                apiCallHst.RunID = Convert.ToInt64(runID);
+                apiCallHst.StartTime = dtServiceStart;
+                apiCallHst.EndTime = DateTime.Now;
+                apiCallHst.Comment = "Call For JSON";
+                apiCallHst.Status = strStatus;//"START";
+
+                APICallHistoryHandler callHistoryHandler = new APICallHistoryHandler();
+
+                callHistoryHandler.AddNew(apiCallHst);
 
 
-
-                callHistoryHandler.Update(apiCallHstEnd);
                 #endregion
 
+                
                 #region Entry into Summary
-                //MasterFormApplicationSummary applicationSummary = new MasterFormApplicationSummary();
+                MasterFormApplicationSummary applicationSummary = new MasterFormApplicationSummary();
+
+                foreach (DataRow row in dtOutput.Rows)
+                {
+                    applicationSummary.RunID = Convert.ToInt64(runID);
+                    applicationSummary.EntryDate = DateTime.Now;
+                    applicationSummary.FileName = string.IsNullOrEmpty(Convert.ToString(row["FileName"])) ? "" : Convert.ToString(row["FileName"]); 
+                    applicationSummary.FieldKey = string.IsNullOrEmpty(Convert.ToString(row["FieldName"])) ? "" : Convert.ToString(row["FieldName"]); 
+                    applicationSummary.FieldValue =string.IsNullOrEmpty(Convert.ToString(row["FieldValue"]))?"": Convert.ToString(row["FieldValue"]);
+                    MasterFormApplicationSummaryHandler applicationSummaryHandler = new MasterFormApplicationSummaryHandler();
+
+                    applicationSummaryHandler.AddNew(applicationSummary);
+
+                }
 
                 //foreach (DataRow row in dtOutput.Rows)
                 //{
@@ -329,6 +286,7 @@ namespace OCR_DLL_Invoker
                 log.ErrorTime = DateTime.Now;
                 log.ErrorMessage = Convert.ToString(ex.Message);
                 log.Comments = "Error at Call For JSON Method for Run ID: " + runID + "";
+                log.ErrorNumber = "0";
                 ExceptionLogHandler exceptionLogHandler = new ExceptionLogHandler();
 
                 exceptionLogHandler.AddNew(log);
@@ -336,16 +294,17 @@ namespace OCR_DLL_Invoker
                 #endregion
 
                 #region Update History table
-                APICallHistory apiCallHstEnd = new APICallHistory();
+                APICallHistory apiCallHst = new APICallHistory();
 
-                apiCallHstEnd.RunID = Convert.ToInt64(runID);
-                apiCallHstEnd.EndTime = DateTime.Now;
-
-                apiCallHstEnd.Status = strStatus;
-
+                apiCallHst.RunID = Convert.ToInt64(runID);
+                apiCallHst.StartTime = dtServiceStart;
+                apiCallHst.EndTime = DateTime.Now;
+                apiCallHst.Comment = "Call For JSON";
+                apiCallHst.Status = strStatus;//"START";
 
                 APICallHistoryHandler callHistoryHandler = new APICallHistoryHandler();
-                callHistoryHandler.Update(apiCallHstEnd);
+
+                callHistoryHandler.AddNew(apiCallHst);
 
                 #endregion
 

@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Collections.Generic;
 using DAL;
 using BLL;
+using System.Data;
 //using OCR_DLL_Invoker;
 
 
@@ -695,7 +696,203 @@ namespace FormRecognitionUtility
             return result;
         }
 
+        public static DataTable ProcessFile(string documentsPath, string[] formNames, long RunID)
+        {
+            AutoFormsRecognizeFormResult result = new AutoFormsRecognizeFormResult();// Added By Prasanta, string will be handled in srevice
+            DataTable dtResult = new DataTable();// Added By Prasanta
+            dtResult.Columns.Add("FieldName", typeof(string));// Added By Prasanta
+            dtResult.Columns.Add("FieldValue", typeof(string));// Added By Prasanta
+            dtResult.Columns.Add("FileName", typeof(string));// Added By Prasanta
+            string fieldname = string.Empty;
+            string fieldvalue = string.Empty;
 
+            string ocrOutput = String.Empty;
+            var dirPath = GetEnvironmentVariable("SMART");  // Home directory path
+                                                                    // var defaultLicenseFile = Path.Combine(dirPath, "License\\Lateetud_License.lic");
+                                                                    // var defaultLicenseKeyFile = Path.Combine(dirPath, "License\\Lateetud_License.lic.key");
+            var defaultLicenseFile = Path.Combine("C:\\LEADTOOLS 20\\Common", "License\\LEADTOOLS.lic");
+            var defaultLicenseKeyFile = Path.Combine("C:\\LEADTOOLS 20\\Common", "License\\LEADTOOLS.lic.key");
+            SetLicense(true);
+            var value = 0;
+            var tifFiles = Directory.GetFiles(documentsPath, "*.*", SearchOption.AllDirectories).Where(file => (file.ToLower().EndsWith("pdf") || file.ToLower().EndsWith("tiff") || file.ToLower().EndsWith("tif"))).ToArray();
+
+            //filter forms with sent formNames
+            if (formNames.Length > 0)
+            {
+                tifFiles = tifFiles.Where(file => formNames.Any(tf => String.Equals(tf, Path.GetFileName(file), StringComparison.InvariantCultureIgnoreCase))).ToArray();
+            }
+
+            //var DirPath = @"C:\Users\Public\Lateetud Form Recognizer";
+            var masterPath = Path.Combine(dirPath, "OCRMasterFormSets");
+            var notFoundPath = Path.Combine(dirPath, "OCRNotRecognized");
+
+            OcrEngineType engineType;
+            if (!Enum.TryParse(EngineType, true, out engineType))
+            {
+                // log.Error(string.Format("Unknown engine type [{0}]", EngineType));
+                Console.WriteLine("Not Recognized");
+
+            }
+
+            foreach (var fileToProcess in tifFiles)
+            {
+                //  var documentResult = new OcrDocumentResult();
+                // documentResult.DocumentName = Path.GetFileName(fileToProcess);
+                //   output.DocumentsOcrReport.Add(documentResult);
+
+                using (var rApi = new FormAutoRecognitionApi(masterPath, engineType, defaultLicenseFile, File.ReadAllText(defaultLicenseKeyFile)))
+                {
+                    var targetDocPath = Path.Combine(documentsPath, fileToProcess);
+                    var filename = Path.GetFileName(targetDocPath);
+                    var newFilename = Path.GetFileNameWithoutExtension(targetDocPath) + "_" + DateTime.Now.Ticks + Path.GetExtension(targetDocPath); //Added By Prasanta
+                    //AutoFormsRecognizeFormResult result = rApi.ProcessForm(targetDocPath);// Commented By Prasanta, string will be handled in srevice
+                    result = rApi.ProcessForm(targetDocPath);
+                    if (result != null)
+                    {
+                        string outputPath = Path.Combine(dirPath, "OCROutput");
+
+                        var formName = result.Properties.Name; // This is the Master Form Name
+                        var csvFileName = Path.GetFileNameWithoutExtension(filename);
+                        var extension = Path.GetExtension(filename);
+                        //var targetDirPath = Path.Combine(dirPath, "Output", outputFolderName, formName);
+                        //var csvtargetPath = Path.Combine(targetDirPath, csvFileName);
+
+                        // See whether Dictionary contains this string.
+                        if (dictionary.ContainsKey(formName))
+                        {
+                            dictionary[formName]++;
+                        }
+                        else
+                        {
+                            dictionary.Add(formName, 1);
+                        }
+
+                        if (!Directory.Exists(outputPath))
+                        {
+                            Directory.CreateDirectory(outputPath);
+                        }
+                        //var timestamp = DateTime.Now.ToString("yyyyMMddHHmmssfff");
+                        //var reNameFile = Path.Combine(csvtargetPath + "_" + timestamp + extension);
+
+                        //File.Copy(targetDocPath, Path.Combine(outputPath, filename));// Commented By Prasanta, To rename the old file with timestamp
+                        File.Copy(targetDocPath, Path.Combine(outputPath, newFilename));// Added By Prasanta
+
+                        #region Save Into DB
+
+
+
+                        //MasterFormApplicationSummary applicationSummary = new MasterFormApplicationSummary();
+                        foreach (var formPage in result.FormPages)
+                        {
+
+                            foreach (var pageResultItem in formPage)
+                            {
+
+                                var textField = pageResultItem as TextFormField;
+                                var omrField = pageResultItem as OmrFormField;
+                                var tablefield = pageResultItem as TableFormField;
+
+                                if (textField != null)
+                                {
+
+
+                                    ((TextFormFieldResult)textField.Result).Text = ((TextFormFieldResult)textField.Result).Text?.Replace(",", " ");
+                                    ((TextFormFieldResult)textField.Result).Text = ((TextFormFieldResult)textField.Result).Text?.Replace(System.Environment.NewLine, " ");
+                                    fieldname = textField.Name;
+                                    fieldvalue = ((TextFormFieldResult)(textField.Result)).Text?.Trim();
+                                    DataRow dr = dtResult.NewRow();
+                                    dr["FieldName"] = fieldname;
+                                    dr["FieldValue"] = fieldvalue;
+                                    dr["FileName"] = filename;
+                                    dtResult.Rows.Add(dr);
+
+                                    //applicationSummary.RunID = Convert.ToInt64(RunID);
+                                    //applicationSummary.EntryDate = DateTime.Now;
+                                    //applicationSummary.FileName = filename;
+                                    //applicationSummary.FieldKey = textField.Name;
+                                    //applicationSummary.FieldValue = ((TextFormFieldResult)(textField.Result)).Text?.Trim();
+                                    //MasterFormApplicationSummaryHandler applicationSummaryHandler = new MasterFormApplicationSummaryHandler();
+
+                                    //applicationSummaryHandler.AddNew(applicationSummary);
+
+
+                                    //ocrResult += openBrac + fieldname + resDenoter + fieldvalue + closeBrac;
+
+                                }
+                                else if (omrField != null)
+                                {
+                                    if (((OmrFormFieldResult)(omrField.Result)).Text == "0")
+                                    {
+                                        ((OmrFormFieldResult)(omrField.Result)).Text = ((OmrFormFieldResult)(omrField.Result)).Text?.Replace("0", "False");
+                                    }
+                                    else
+
+                                    {
+                                        ((OmrFormFieldResult)(omrField.Result)).Text = ((OmrFormFieldResult)(omrField.Result)).Text?.Replace("1", "True");
+                                    }
+
+                                    fieldname = omrField.Name;
+                                    fieldvalue = ((OmrFormFieldResult)(omrField.Result)).Text;
+                                    fieldname = textField.Name;
+                                    fieldvalue = ((TextFormFieldResult)(textField.Result)).Text?.Trim();
+                                    DataRow dr = dtResult.NewRow();
+                                    dr["FieldName"] = fieldname;
+                                    dr["FieldValue"] = fieldvalue;
+                                    dr["FileName"] = filename;
+                                    dtResult.Rows.Add(dr);
+
+                                    //applicationSummary.RunID = Convert.ToInt64(RunID);
+                                    //applicationSummary.EntryDate = DateTime.Now;
+                                    //applicationSummary.FileName = fileToProcess;
+                                    //applicationSummary.FieldKey = omrField.Name;
+                                    //applicationSummary.FieldValue = ((OmrFormFieldResult)(omrField.Result)).Text;
+
+                                    //MasterFormApplicationSummaryHandler applicationSummaryHandler = new MasterFormApplicationSummaryHandler();
+
+                                    //MasterFormApplicationSummaryHandler applicationSummaryHandler = new MasterFormApplicationSummaryHandler();
+
+                                    //applicationSummaryHandler.AddNew(applicationSummary);
+
+                                }
+                            }
+                        }
+                        #endregion
+
+                        // PrintToCSV(csvtargetPath + "_" + timestamp + ".csv", result, formName);
+                        //ocrOutput = PrintToString(result);// Commented By Prasanta, string will be handled in srevice
+
+                        //log.Info("Done!");
+
+                    }
+                    else
+                    {
+                        if (!Directory.Exists(notFoundPath))
+                        {
+                            Directory.CreateDirectory(notFoundPath);
+                        }
+
+                        if (dictionary.ContainsKey("Not Recognized"))
+                        {
+                            dictionary["Not Recognized"]++;
+                        }
+
+                        else
+                        {
+                            dictionary.Add("Not Recognized", 1);
+                        }
+
+                        var filenotfound = Path.Combine(notFoundPath, filename);
+
+                        // File.Copy(targetDocPath, filenotfound, true);
+                        // log.Warn("No result found");
+                        Console.WriteLine("Not Recognized");
+                    }
+                }
+
+            }
+            //return ocrOutput;// Commented By Prasanta, string will be handled in srevice
+            return dtResult;
+        }
 
 
         private static int MinConfidence(AutoFormsRecognizeFormResult result)
